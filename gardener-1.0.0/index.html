@@ -30,6 +30,123 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    
+
+<style>
+section {
+  width: 80%;
+  height: 60px;
+  box-sizing: border-box;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.card {
+  position: relative;
+  min-width: 200px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  transition: .5s;
+    margin: 30px;
+  margin-top:30px;
+}
+.card:hover {
+  transform:scale(1.1);
+}
+.card_red, .card_red .title .fa {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+.card_violet, .card_violet .title .fa  {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+.card_three, .card_three .title .fa  {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: 40%;
+  background: rgba(255, 255, 255, .1);
+  z-index: 1;
+  transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fa {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+.title h2 {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 10;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+.price {
+  position: relative;
+  z-index: 2;
+}
+.price h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 60px;
+}
+.option {
+  position: relative;
+  z-index: 2;
+}
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+.option ul li {
+  margin: 0 0 10px;
+  margin-bottom: 8px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.card a {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  color: #262f;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 20px auto 0;
+  line-height: 40px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0,0,0, .1);
+}
+.card a:hover {
+  
+}
+</style>
 </head>
 
 <body>
@@ -65,6 +182,9 @@
            
     </nav>
     <!-- Navbar End -->
+
+
+    
 
 
     <!-- Carousel Start -->
@@ -112,101 +232,181 @@
     </div>
     <!-- Carousel End -->
 
-
     <!-- Top Feature Start -->
     <div class="container-fluid top-feature py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-award"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>LiFE Activity</h4>
-                                <span>Blending wisdom and science for sustainable living and global responsibility.</span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container py-5 pt-lg-0">
+          <div class="row gx-0">
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                      <div class="d-flex">
+                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                              <i class="fa fa-award" style="font-size:30px; color:rgb(0,100,0);"></i>
+                          </div>
+                          <div class="ps-3">
+                              <h4>LiFE Activity</h4>
+                              <span>Blending wisdom and science for sustainable living and global responsibility.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                      <div class="d-flex">
+                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                              <i class="fa fa-tools" style="font-size:30px; color:rgb(0,100,0);"></i>
+                          </div>
+                          <div class="ps-3">
+                              <h4>Schemes</h4>
+                              <span>A versatile platform for comprehensive growth and development opportunities.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                      <div class="d-flex">
+                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                              <i class="fa fa-users" style="font-size:30px; color:rgb(0,100,0);"></i>
+                          </div>
+                          <div class="ps-3">
+                              <h4>Awareness</h4>
+                              <span>Cultivating conscious understanding for positive societal impact through information and education.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Top Feature End -->
+
+
+
+
+    <section style="margin-top:60px; margin-bottom: 460px;">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card_red text-center">
+                  <div class="title">
+                    <i class="fas fa-trophy" aria-hidden="true"></i>
+                    <h2>Reward</h2>
+                  </div>
+                  
+                  <div class="option">
+                    <ul>
+                      <li>Earn exclusive rewards while you stay green – discounts, special offers, and certificates await on our platform!</li>
+                      
+                      </ul>
+                  </div>
+                  
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-tools"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>Schemes</h4>
-                                <span>A versatile platform for comprehensive growth and development opportunities.</span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card card_violet text-center">
+                  <div class="title">
+                    <i class="fas fa-cogs" aria-hidden="true"></i>
+                    <h2>Choices</h2>
+                  </div>
+                 
+                  <div class="option">
+                    <ul>
+                      <li>
+                        Earn personalized rewards, from stunning art to surprise boxes and wild wins, shaping your adventure on our platform!</li>
+                      
+                      </ul>
+                  </div>
+                  
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>Awareness</h4>
-                                <span>Cultivating conscious understanding for positive societal impact through information and education.</span>
-                            </div>
-                        </div>
+              </div>
+              <div class="col-sm-4">
+                    <div class="card card_three text-center">
+                    <div class="title">
+                      <i class="fas fa-gift" aria-hidden="true"></i>
+                        <h2>Surprises</h2>
                     </div>
+                    
+                    <div class="option">
+                        <ul>
+                        <li>stunning art,surprises, &  crazy rewards await your every interaction! Every click is a celebration.</li>
+                        
+                        </ul>
+                    </div>
+                    
+                    </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card_three text-center">
+                <div class="title">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <h2>Online Support</h2>
                 </div>
+                
+                <div class="option">
+                    <ul>
+                    <li>Earn government rewards, discounts, and special offers for your eco-activism!</li>
+                    
+                    </ul>
+                </div>
+                
+                </div>
+          </div> 
+
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Top Feature End -->
+      </section>
+
+      
 
      <!-- Features Start -->
      <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">Why EcoTrack!</p>
-                    <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
-                    <p class="mb-4">Choosing an eco-friendly lifestyle preserves the planet by reducing carbon footprint and promoting sustainable choices for a healthier environment and resource preservation.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 100px; height: 100px;">
-                                            <i class="fa fa-tree fa-tree text-primary "></i>
-                                        </div>
-                                        <h4 class="mb-0">Earthwise Living</h4>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                        <div class="btn-square bg-light rounded-circle mx-auto mb-6" style="width: 100px; height: 100px;">
-                                            <i class="fa fa-leaf fa-leaf text-primary "></i>
-                                        </div>
-                                        <h4 class="mb-0"style="margin:20px;">EcoHarmony Lifestyle</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
-                            <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                                    <i class="fa fa-tools fa-aw text-primary"></i>
-                                </div>
-                                <h4 class="mb-0">GreenImpact Living</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features End -->
+      <div class="container">
+          <div class="row g-5 align-items-center">
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <p class="fs-5 fw-bold text-primary">Why EcoTrack!</p>
+                  <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
+                  <p class="mb-4">Choosing an eco-friendly lifestyle preserves the planet by reducing carbon footprint and promoting sustainable choices for a healthier environment and resource preservation.</p>
+                  <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+              </div>
+              <div class="col-lg-6">
+                  <div class="row g-4 align-items-center">
+                      <div class="col-md-6">
+                          <div class="row g-4">
+                              <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                  <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                      <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 100px; height: 100px;">
+                                          <i class="fa fa-tree fa-tree text-primary " style="font-size: 50px;"></i>
+                                      </div>
+                                      <h4 class="mb-0">Earthwise Living</h4>
+                                  </div>
+                              </div>
+                              <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                  <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                      <div class="btn-square bg-light rounded-circle mx-auto mb-6" style="width: 100px; height: 100px;">
+                                          <i class="fa fa-leaf fa-leaf text-primary " style="font-size: 50px;"></i>
+                                      </div>
+                                      <h4 class="mb-0"style="margin:20px;">EcoHarmony Lifestyle</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                          <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                              <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                  <i class="fa fa-tools fa-aw text-primary" style="font-size: 50px;"></i>
+                              </div>
+                              <h4 class="mb-0">GreenImpact Living</h4>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Features End -->
 
 
     
@@ -378,27 +578,94 @@
     <!-- Service End -->
 
 
-   
+
+  
+ 
+ 
+
+  <!-- Facts Start -->
+  <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+      <div class="container py-5">
+          <div class="row g-5">
+              <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                  <h1 class="display-4 text-white" data-toggle="counter-up">500</h1>
+                  <span class="fs-5 fw-semi-bold text-light">Consumers</span>
+              </div>
+              <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                  <h1 class="display-4 text-white" data-toggle="counter-up">433</h1>
+                  <span class="fs-5 fw-semi-bold text-light">Participants</span>
+              </div>
+              <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                  <h1 class="display-4 text-white" data-toggle="counter-up">222</h1>
+                  <span class="fs-5 fw-semi-bold text-light">Awarness</span>
+              </div>
+              <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                  <h1 class="display-4 text-white" data-toggle="counter-up">465</h1>
+                  <span class="fs-5 fw-semi-bold text-light">voulnteer activity</span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Facts End -->
+  
+   <!-- About Start -->
+   <div class="container-xxl py-5">
+      <div class="container">
+          <div class="row g-5 align-items-end">
+              <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                  <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg">
+              </div>
+              <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                  <h1 class="display-5 mb-4">What to do?</h1>
+                  <p class="mb-4">Adopt an eco-friendly lifestyle by choosing sustainable products, minimizing waste, conserving energy and water, and supporting eco-friendly initiatives.
+                      </p>
+                  <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+              </div>
+              <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="row g-5">
+                      <div class="col-12 col-sm-6 col-lg-12">
+                          <div class="border-start ps-4">
+                              <i class="fa fa-tree fa-3x text-primary mb-3"></i>
+                              <h4 class="mb-3">GreenHabit Living</h4>
+                              <span> Sustainable choices for a greener lifestyle.</span>
+                          </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-lg-12">
+                          <div class="border-start ps-4">
+                              <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                              <h4 class="mb-3">EcoStride Lifestyle</h4>
+                              <span>Harmonizing well-being with eco-conscious choices for a sustainable life.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- About End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+ 
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/parallax/parallax.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
