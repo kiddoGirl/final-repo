@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gardener - Gardening Website Template</title>
+    <title>EcoTrack - Home</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -146,6 +146,12 @@ section {
 .card a:hover {
   
 }
+
+.center{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
 </style>
 </head>
 
@@ -167,26 +173,19 @@ section {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Ministry Dashboard</a>
-                <a href="#" class="nav-item nav-link">User Dashboard</a>
+                <a href="" class="nav-item nav-link">Ministry Dashboard</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Consumer Dashboard</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="user-login.html" class="dropdown-item">User Login</a>
-                        <a href="#" class="dropdown-item">Admin Login</a>
-                        
+                        <a href="user.html" class="dropdown-item">Event/Activity</a>
+                        <a href="goods.html" class="dropdown-item">Goods Purchased</a>
                     </div>
                 </div>
-               
+                <a href="user-login.html" class="nav-item nav-link">Login <span id="loginCount"></span></a>               
             </div>
            
     </nav>
     <!-- Navbar End -->
-
-
-    
-
-
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -198,7 +197,6 @@ section {
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <h1 class="text-white mb-3 animated slideInDown" style="line-height:70px;font-size:50px;">Every act of environmental kindness ripples into a wave of positive impact.</h1>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -211,7 +209,7 @@ section {
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
                                     <h1 class=" text-white mb-3 animated slideInDown" style="line-height:70px;font-size:50px;">Earth smiles when we tread lightly</h1>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -279,7 +277,17 @@ section {
       </div>
   </div>
   <!-- Top Feature End -->
-
+  <section style="margin-left: auto; margin-right:auto;">
+    <div class="container mt-5">
+        <div class="card spin-card animated">
+          <i class="fas fa-user fa-3x mx-auto mt-3"></i>
+          <!-- <div class="card-body text-center"> -->
+            <a  href="user-login.html" class="card-title" style="color:#000; font-size:large; padding:5px; text-decoration: none; margin-bottom: 8px;">Unlock portal !</a>
+<!--             
+          </div> -->
+        </div>
+      </div>
+</section>
 
 
 
@@ -287,10 +295,10 @@ section {
         <div class="container-fluid">
           <div class="container">
             <div class="row">
+                <h1 style="margin-top: 30px; align-items: center; justify-content: center; margin-left: auto; margin-right: auto;">Benefits of Action</h1>
               <div class="col-sm-4">
                 <div class="card card_red text-center">
                   <div class="title">
-                    <i class="fas fa-trophy" aria-hidden="true"></i>
                     <h2>Reward</h2>
                   </div>
                   
@@ -306,7 +314,6 @@ section {
               <div class="col-sm-4">
                 <div class="card card_violet text-center">
                   <div class="title">
-                    <i class="fas fa-cogs" aria-hidden="true"></i>
                     <h2>Choices</h2>
                   </div>
                  
@@ -323,7 +330,6 @@ section {
               <div class="col-sm-4">
                     <div class="card card_three text-center">
                     <div class="title">
-                      <i class="fas fa-gift" aria-hidden="true"></i>
                         <h2>Surprises</h2>
                     </div>
                     
@@ -336,11 +342,10 @@ section {
                     
                     </div>
               </div>
-
+              <div class="center">
               <div class="col-sm-4">
                 <div class="card card_three text-center">
                 <div class="title">
-                    <i class="fa fa-check" aria-hidden="true"></i>
                     <h2>Online Support</h2>
                 </div>
                 
@@ -353,7 +358,7 @@ section {
                 
                 </div>
           </div> 
-
+        </div>
             </div>
           </div>
         </div>
@@ -419,20 +424,20 @@ section {
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">500</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Consumers</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">433</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Participants</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">222</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Awareness</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">465</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Voulnteer Activity</span>
                 </div>
             </div>
         </div>
@@ -444,7 +449,7 @@ section {
         <div class="container">
             <div class="row g-5 align-items-end">
                 <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/4b9a0c0e54e8c9d8e730f43ab6248739.jpg">
                 </div>
                 <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
                     <h1 class="display-5 mb-4">What to do?</h1>
@@ -474,17 +479,17 @@ section {
         </div>
     </div>
     <!-- About End -->
-<<<<<<< HEAD
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-=======
+
    
        <!-- Service Start -->
        <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">SChemes and Awareness program</p>
+                <p class="fs-5 fw-bold text-primary">Schemes and Awareness program</p>
                 <!-- <h1 class="display-5 mb-5">Harvest Green Success: Join Schemes for a Flourishing Environment.</h1> -->
             </div>
             <div class="row g-4">
@@ -583,73 +588,29 @@ section {
     </div>
     <!-- Service End -->
 
-
+    <div class="container">
+        <div class="row">
+          <!-- Left side with image -->
+          <div class="col-md-4">
+            <img src="img/benefit.jpg" alt="Image" class="img-fluid">
+          </div>
+          
+          <!-- Right side with content -->
+          <div class="col-md-8">
+            <h2>Benefit</h2>
+            <p>Embracing an environment-friendly lifestyle yields numerous benefits. These include positive
+                environmental impact, contributions to a sustainable future, personal well-being, cost savings,
+                global and community influence, cultural value preservation, and an educational platform to
+                raise awareness about crucial environmental issues</p>
+            <!-- Add more content as needed -->
+          </div>
+        </div>
+      </div>
 
   
  
  
 
-  <!-- Facts Start -->
-  <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
-      <div class="container py-5">
-          <div class="row g-5">
-              <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                  <h1 class="display-4 text-white" data-toggle="counter-up">500</h1>
-                  <span class="fs-5 fw-semi-bold text-light">Consumers</span>
-              </div>
-              <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                  <h1 class="display-4 text-white" data-toggle="counter-up">433</h1>
-                  <span class="fs-5 fw-semi-bold text-light">Participants</span>
-              </div>
-              <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                  <h1 class="display-4 text-white" data-toggle="counter-up">222</h1>
-                  <span class="fs-5 fw-semi-bold text-light">Awarness</span>
-              </div>
-              <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                  <h1 class="display-4 text-white" data-toggle="counter-up">465</h1>
-                  <span class="fs-5 fw-semi-bold text-light">voulnteer activity</span>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Facts End -->
-  
-   <!-- About Start -->
-   <div class="container-xxl py-5">
-      <div class="container">
-          <div class="row g-5 align-items-end">
-              <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                  <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg">
-              </div>
-              <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                  <h1 class="display-5 mb-4">What to do?</h1>
-                  <p class="mb-4">Adopt an eco-friendly lifestyle by choosing sustainable products, minimizing waste, conserving energy and water, and supporting eco-friendly initiatives.
-                      </p>
-                  <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-              </div>
-              <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                  <div class="row g-5">
-                      <div class="col-12 col-sm-6 col-lg-12">
-                          <div class="border-start ps-4">
-                              <i class="fa fa-tree fa-3x text-primary mb-3"></i>
-                              <h4 class="mb-3">GreenHabit Living</h4>
-                              <span> Sustainable choices for a greener lifestyle.</span>
-                          </div>
-                      </div>
-                      <div class="col-12 col-sm-6 col-lg-12">
-                          <div class="border-start ps-4">
-                              <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                              <h4 class="mb-3">EcoStride Lifestyle</h4>
-                              <span>Harmonizing well-being with eco-conscious choices for a sustainable life.</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- About End -->
->>>>>>> 0adc1ab72f659035bb88275690319c54bbabc8ad
 
 
  
@@ -673,6 +634,34 @@ section {
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.spin-card').on('click', function(){
+        $(this).toggleClass('rotateIn');
+      });
+    });
+  </script>
+
+<script>
+   
+    function fetchLoginCount() {
+       
+        return 2; 
+    }
+
+    
+    function updateLoginCount() {
+        const loginCount = fetchLoginCount();
+        const loginCountElement = document.getElementById('loginCount');
+        loginCountElement.textContent = ` (${loginCount} logged in today)`; // Display the count
+    }
+
+    
+    window.onload = function () {
+        updateLoginCount();
+    };
+</script>
+
 </body>
 
 </html>
