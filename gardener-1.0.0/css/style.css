@@ -1102,6 +1102,18 @@ body {
     margin-bottom: 20px;
     font-size: 24px;
   }
+<<<<<<< HEAD
+  
+  .statistical-results {
+    border: 1px solid green;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+
+  
+  
+=======
 
 
 body {
@@ -1138,3 +1150,4 @@ input[type="submit"]:hover {
     background-color: #348E38;
 }
 
+>>>>>>> 0adc1ab72f659035bb88275690319c54bbabc8ad
