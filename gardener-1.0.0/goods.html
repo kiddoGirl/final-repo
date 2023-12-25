@@ -38,121 +38,164 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">EcoTrack</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="" class="nav-item nav-link">Ministry Dashboard</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Consumer Dashboard</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="user.html" class="dropdown-item">Event/Activity</a>
-                        <a href="goods.html" class="dropdown-item">Goods Purchased</a>
-                        
-                    </div>
-                </div>
-                <a href="user-login.html" class="nav-item nav-link">Login</a>               
-                </div>
-               
-            </div>
-           
-    </nav>
+      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+          <h1 class="m-0">EcoTrack</h1>
+      </a>
+      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="ministry.html" class="nav-item nav-link">Ministry Dashboard</a>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Consumer Dashboard</a>
+                  <div class="dropdown-menu bg-light m-0">
+                      <a href="user.html" class="dropdown-item">Event/Activity</a>
+                      <a href="goods.html" class="dropdown-item">Goods Purchased</a>
+                  </div>
+              </div>
+              <a href="reward.html" class="nav-item nav-link">Reward </a> 
+              <a href="user-login.html" class="nav-item nav-link">Login <span id="loginCount"></span></a>               
+          </div>
+         
+  </nav>
 
-<div class="form-container">
-  <form id="form1">
-    <div class="form-group">
-      <label for="input1">Name of the Goods Purchased</label>
-      <select>
-        <option value="option1">LED Bulbs</option>
-        <option value="option2">Solar Water Heater</option>
-        <option value="option1">Eco Friendly Powerbulb</option>
-        <option value="option2">Solar Water Heater</option>
-        <option value="option1">Water Saving Appliances</option>
-        <option value="option2">Reusable Water Bottle</option>
-        <option value="option1">Jute Bages</option>
-        <option value="option2">Reusable Cups</option>
-        <option value="option1">Reusable Produce Bags</option>
-        <option value="option2">Bamboo Utensils</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="imageUpload">Upload Bill/Proof</label>
-      <input type="file" id="imageUpload">
-    </div>
-    <button type="button" onclick="showSecondForm()">upload</button>
-  </form>
-
-  <div class="form-container second-form">
-    <form id="form2">
-      <div class="form-group">
-        <label for="input2a">Life Activity Covered</label>
-        <input type="text" id="input2a">
-      </div>
-      <div class="form-group">
-        <label for="input2b">Measurable Outcome</label>
-        <input type="text" id="input2b">
-      </div>
-	  <div class="form-group">
-        <label for="input2b">Scheme Achieved</label>
-        <input type="text" id="input2b">
-      </div>
-      <div class="form-group">
-        <label for="input1">Awareness Program Reached</label>
-        <select>
-          <option value="option1">Yes</option>
-          <option value="option2">No</option>
-        </select>
-      </div>    </form>
-  </div>
-
-
-  
-
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <p>No of Eco-Product Purchased</p>
-          <h5 class="card-title">28</h5>
+    <div class="form-container">
+      <form id="form1">
+        <div class="form-group">
+          <label for="input1">Name of the Goods Purchased</label>
+          <select id="goodsSelect">
+            <option value="LED Bulbs">LED Bulbs</option>
+            <option value="SolarWaterHeater">Solar Water Heater</option>
+            <option value="EcoFriendlyPowerbulb">Eco Friendly Powerbulb</option>
+            <option value="WaterSavingAppliances">Water Saving Appliances</option>
+            <option value="ReusableWaterBottle">Reusable Water Bottle</option>
+            <option value="JuteBags">Jute Bags</option>
+            <option value="ReusableCups">Reusable Cups</option>
+            <option value="ReusableProduceBags">Reusable Produce Bags</option>
+            <option value="BambooUtensils">Bamboo Utensils</option>
+          </select>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <p>Discount claims Received</p>
-          <h5 class="card-title">8</h5>
+        <div class="form-group">
+          <label for="imageUpload">Upload Bill/Proof</label>
+          <input type="file" id="imageUpload">
         </div>
-      </div>
-    </div>
+        <button type="button" onclick="showSecondForm()">Upload</button>
+      </form>
     
-  </div>
-</div>
+      <div class="form-container second-form">
+        <form id="form2">
+          <div class="form-group">
+            <label for="input2a">Life Activity Covered</label>
+            <input type="text" id="input2a">
+          </div>
+          <div class="form-group">
+            <label for="input2b">Measurable Outcome</label>
+            <input type="text" id="input2b">
+          </div>
+          <div class="form-group">
+            <label for="input2c">Scheme Achieved</label>
+            <input type="text" id="input2c">
+          </div>
+          <div class="form-group">
+            <label for="input2d">Awareness Program Reached</label>
+            <select id="awarenessSelect">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </form>
 
-  <!--<div class="statistical-results">
-    <p>Statistical results will be displayed here.</p>
-  </div>-->
-  <button type="button" onclick="showSecondForm()">Reward Voucher</button>
-</div>
+      </div>
 
-<script>
-function showSecondForm() {
-  document.querySelector(".second-form").style.display = "flex";
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <p>No of Eco-Product Purchased</p>
+                <h5 class="card-title" id="activityCount">8</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <p>Discount claims Received</p>
+                <h5 class="card-title" id="outcomecount">19</h5>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+      <script>
+
+let activityCount = 8; // Initial count
+   let outcomecount = 19;
+
+        function showSecondForm() {
+          const goodsSelect = document.getElementById('goodsSelect');
+          const selectedOption = goodsSelect.options[goodsSelect.selectedIndex].value;
+    
+          const input2a = document.getElementById('input2a');
+          const input2b = document.getElementById('input2b');
+          const input2c = document.getElementById('input2c');
+          const awarenessSelect = document.getElementById('awarenessSelect');
+    
+          // Populate the second form based on the selected goods
+          switch (selectedOption) {
+            case 'LED Bulbs':
+              input2a.value = 'Energy-Efficient LED Bulbs Purchase';
+              input2b.value = 'Reduced Energy Consumption by 10%';
+              input2c.value = 'Promoted Energy Efficiency';
+              awarenessSelect.value = 'Yes';
+              break;
+            case 'SolarWaterHeater':
+              input2a.value = 'Solar Water Heater Installation';
+              input2b.value = 'Reduced Dependence on Conventional Energy';
+              input2c.value = 'Promoted Renewable Energy Sources';
+              awarenessSelect.value = 'Yes';
+              break;
+            case 'EcoFriendlyPowerbulb':
+              input2a.value = 'Usage of Eco-Friendly Powerbulbs';
+              input2b.value = 'Reduced Carbon Footprint';
+              input2c.value = 'Promoted Sustainable Lighting';
+              awarenessSelect.value = 'Yes';
+              break;
+            case 'WaterSavingAppliances':
+              input2a.value = 'Water-Saving Appliances Purchase';
+              input2b.value = 'Reduced Water Consumption by 15%';
+              input2c.value = 'Promoted Water Conservation';
+              awarenessSelect.value = 'Yes';
+              break;
+            // Add cases for other goods
+    
+            default:
+              break;
+          }
+          activityCount++;
+          outcomecount++;
+
+// Update the count in the card
+document.getElementById('activityCount').textContent = activityCount;
+document.getElementById('outcomecount').textContent = outcomecount;
+
+// Show the second form
+document.querySelector('.second-form').style.display = 'block';
 }
 
-function showStatisticalResults() {
-  // Implement your statistical calculations and display results here
-  const resultsDiv = document.querySelector(".statistical-results");
-  resultsDiv.textContent = "Calculations completed! Displaying results...";
-  // Add your actual results content here
-}
-</script>
 
-</body>
-</html>
+
+function updateActivityCount() {
+      // Increment count when submitting the second form
+      activityCount++;
+
+      // Update the count in the card
+      document.getElementById('activityCount').textContent = activityCount;
+    }
+      </script>
+    </body>
+    </html>
